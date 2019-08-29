@@ -1,0 +1,32 @@
+.feat_item{
+    // position: relative;
+    background-color: #ffffff;
+    margin-top: 1%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 2%;
+    box-shadow: 0 3px 11px rgba(94, 96, 110, 0.363);
+    // grid-auto-rows: 1fr; no need
+    img{
+        max-height: 100%;
+        min-height: 100%;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    article{
+        // background-color: brown;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        max-height: 70%;
+        min-height: 70%;
+        overflow: hidden;
+    }
+    h2{
+        // background-color: pink;
+        height: 30%;
+    }
+    
+}
