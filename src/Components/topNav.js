@@ -21,6 +21,26 @@ export default class topNav extends Component {
                                 Explore
                             </Link>
                         </li>
+                        <li>
+                            <Link to='/Explore'>
+                                How To
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/Explore'>
+                                Ruby
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/Explore'>
+                                Python
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/Explore'>
+                                Javascript
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             

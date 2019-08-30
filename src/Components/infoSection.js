@@ -6,14 +6,14 @@ export default class infoSection extends Component {
     render() {
         return (
             <section>
-                <div className="info">
-                    1
+                <div className="info" style={{"borderRadius":"3%"}}>
+                    <p>TECH</p>
                 </div>
-                <div className="info">
-                    2
+                <div className="info" style={{"borderRadius":"3%"}}>
+                    <p>BLOG</p>
                 </div>
-                <div className="info">
-                    3
+                <div className="info" style={{"borderRadius":"3%"}}>
+                    <p>QUOTES</p>
                 </div>
             </section>
         )
