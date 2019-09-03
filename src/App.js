@@ -9,16 +9,20 @@ import './App.css';
 
 function App() {
   return (
+    
     <div className="App">
       <Nav/>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Explore" component={Explore} />
-        {/* <Route exact path="/" component={Home} /> */}
-        {/* <Route exact path="/" component={Home} /> */}
-      </Switch>
+        <div className="Container">
+          <Switch >
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Explore" component={Explore} />
+            {/* <Route exact path="/" component={Home} /> */}
+            {/* <Route exact path="/" component={Home} /> */}
+          </Switch>
+        </div>
       <Footer/>
     </div>
+    
   );
 }
 

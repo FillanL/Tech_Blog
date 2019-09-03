@@ -21,8 +21,6 @@ export default class homeSlider extends Component {
             }
         }, 5000)
     }
-
-
     componentDidMount() {
 
     }
@@ -32,7 +30,7 @@ export default class homeSlider extends Component {
     }
 
     render() {
-        // this.changePic()
+        this.changePic()
         // let changePic = setTimeout(()=>{
         //     if (this.state.index === photos.length - 1) {
         //         this.setState({
@@ -48,8 +46,6 @@ export default class homeSlider extends Component {
         return (
 
             <>
-            
-                {/* {setTimeout(()=>{this.changePic()},3000)} */}
                 <img onClick={()=>this.clickIn()} className="slider" src={photos[this.state.index]} alt="WR" />
             </>
 
