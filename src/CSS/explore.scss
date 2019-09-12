@@ -1,0 +1,14 @@
+.explore{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: rgb(194, 255, 255);
+    .card-area{
+        background-color: rgb(218, 255, 162);
+
+    }
+    .search-box{
+        background-color: rgb(255, 167, 243);
+    }
+}

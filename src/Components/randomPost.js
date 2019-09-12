@@ -6,7 +6,7 @@ import '../CSS/random_post.scss'
 
 export default class randomPost extends Component {
     render() {
-        const ranPost = [1,2,3]
+        const ranPost = [4,5,6]
         return (
             <section className="random_post">
                     {ranPost.map(post => 
@@ -22,7 +22,7 @@ export default class randomPost extends Component {
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita ullam quisquam iusto. Architecto atque totam laboriosam natus nostrum. Ratione aut sint commodi recusandae inventore porro magnam qui blanditiis iusto.
                                     </p>
                                     <br></br>
-                                    <Link to="/"> Read More</Link>
+                                    <Link to={`/article/${post}`}> Read More</Link>
                                 </article>
                             </div>
                     </div>

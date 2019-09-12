@@ -15,7 +15,7 @@ export default class featItems extends Component {
                             lorm uerb as aenfjans askdnaksdka
                         </p>
                     <br></br>
-                    <Link to="/somehting"> Read more</Link>
+                    <Link to={`/article/${this.props.id}`}> Read more</Link>
                     </article>
                 </div>
             </div>

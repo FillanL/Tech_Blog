@@ -46,7 +46,8 @@ export default class homeSlider extends Component {
         return (
 
             <>
-                <img onClick={()=>this.clickIn()} className="slider" src={photos[this.state.index]} alt="WR" />
+            {/* onClick={()=>this.clickIn()} */}
+                <img  className="slider" src={photos[this.state.index]} alt="WR" />
             </>
 
         )

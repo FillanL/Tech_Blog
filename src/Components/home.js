@@ -20,7 +20,7 @@ export default class home extends Component {
                    </div>
                    <div className="feat">
                         {items.map(article =>
-                        <FeaturedItems key={article} />
+                        <FeaturedItems id={article} key={article} />
                             )}
                    </div>
                </div>
