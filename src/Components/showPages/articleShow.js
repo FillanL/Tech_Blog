@@ -13,7 +13,7 @@ class ArticleShow extends Component {
 
                 <div className="info-section">
                     <article>
-                        <h3>Title</h3>
+                        <h1>Title</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita ullam quisquam iusto. Architecto atque totam laboriosam natus nostrum. Ratione aut sint commodi recusandae inventore porro magnam qui blanditiis iusto.
 
