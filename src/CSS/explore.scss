@@ -2,13 +2,24 @@
     min-height: 100vh;
     min-width: 100vw;
     display: grid;
-    grid-template-columns: 25% 75%;
+    // grid-template-columns: 25% 75%;
     background-color: rgb(194, 255, 255);
     .card-area{
+        width: 100%;
         background-color: rgb(218, 255, 162);
-
+        transition: width 4s ease-in-out;
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+          
+        }
     }
     .search-box{
         background-color: rgb(255, 167, 243);
     }
+}
+.card-box{
+    width: 100%;
+    height: 250px;
+    background-color: darkolivegreen;
 }
