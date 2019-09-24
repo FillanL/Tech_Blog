@@ -22,7 +22,7 @@ export default class topNav extends Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/Explore'>
+                            <Link to='/catagory'>
                                 How To
                             </Link>
                         </li>

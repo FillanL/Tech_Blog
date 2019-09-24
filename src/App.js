@@ -6,6 +6,7 @@ import Footer from './Components/footer'
 import Home from './Components/home'
 import Explore from './Components/explore'
 import ArticleShow from './Components/showPages/articleShow';
+import Catagories from './Components/catagories'
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/Explore" component={Explore} />
             <Route exact path="/article/:id" component={ArticleShow} />
-            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/catagory" component={Catagories} />
           </Switch>
         </div>
       <Footer/>
