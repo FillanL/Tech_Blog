@@ -19,7 +19,7 @@ export default class randomPost extends Component {
 
                                 <article>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita ullam quisquam iusto. Architecto atque totam laboriosam natus nostrum. Ratione aut sint commodi recusandae inventore porro magnam qui blanditiis iusto.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita ullam quisquam iusto. 
                                     </p>
                                     <br></br>
                                     <Link to={`/article/${post}`}> Read More</Link>

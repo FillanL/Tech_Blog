@@ -1,5 +1,9 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom'
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {fab} from '@fortawesome/free-brands-svg-icons'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
+
 
 import Nav from './Components/topNav'
 import Footer from './Components/footer'
@@ -8,6 +12,8 @@ import Explore from './Components/explore'
 import ArticleShow from './Components/showPages/articleShow';
 import Catagories from './Components/catagories'
 import './App.css';
+
+library.add(fab, faBars)
 
 function App() {
   return (

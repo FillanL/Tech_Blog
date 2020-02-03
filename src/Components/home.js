@@ -24,9 +24,12 @@ export default class home extends Component {
                             )}
                    </div>
                </div>
-               <InfoSection/>
+               {/* <div> */}
 
-               <div className="bottomSection">
+               <InfoSection/>
+               {/* </div> */}
+
+               <div className="bottom_section">
                    <RandomPost/>
                    <HomeAside/>
                </div>

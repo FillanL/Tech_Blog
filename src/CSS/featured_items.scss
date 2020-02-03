@@ -1,5 +1,5 @@
 .feat_item{
-    // position: relative;
+    position: relative;
     background-color: #ffffff;
     margin-top: 1%;
     padding: 10px;
@@ -39,4 +39,9 @@
         height: 30%;
     }
     
+}
+@media(max-height:700px){
+.feat_item{
+    height: 150px;
+}
 }
