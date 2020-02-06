@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import{Link} from 'react-router-dom';
 import '../CSS/footer.scss'
 
 export default class footer extends Component {
@@ -8,7 +9,11 @@ export default class footer extends Component {
                 <div>
                     <h3>Website title</h3>
                     <ul>
-                        <li>Home</li>
+                        <li>
+                            <Link to='/'>
+                            Home
+                            </Link>
+                        </li>
                         <li>Explore</li>
                         <li>JavaScript</li>
                         <li>Python</li>

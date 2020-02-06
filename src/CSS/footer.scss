@@ -24,9 +24,19 @@ footer{
             a{
                 color: white;
                 &:hover{
+                    text-decoration: underline;
                     color:gray;
                 }
             }
+        }
+    }
+}
+@media(max-width:700px){
+    footer{
+        // grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(3,30%);
+        div{
+            border: none;
         }
     }
 }

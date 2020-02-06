@@ -1,7 +1,7 @@
 .feat_item{
     position: relative;
     background-color: #ffffff;
-    margin-top: 1%;
+    // margin-top: 1%;
     padding: 10px;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -40,8 +40,10 @@
     }
     
 }
-@media(max-height:700px){
-.feat_item{
-    height: 150px;
-}
+@media(max-width:700px){
+    .feat_item{
+        margin-bottom: 25px;
+        // grid-row-gap: 10%;
+        height: 130px;
+    }
 }

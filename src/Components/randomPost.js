@@ -11,7 +11,7 @@ export default class randomPost extends Component {
             <section className="random_post">
                     {ranPost.map(post => 
                     <div className="rando" key={ post}>
-                            <img srcSet="https://images.unsplash.com/photo-1557858310-9052820906f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="stuff" />
+                            <img srcSet="https://images.unsplash.com/photo-1557858310-9052820906f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="stuff" />
                             <div className="random_section_container">
                                 <h2>
                                     title Goes Hereeee!

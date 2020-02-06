@@ -6,11 +6,12 @@ const photos = ["https://images.unsplash.com/photo-1484417894907-623942c8ee29?ix
 
 // let i = 0
 export default class homeSlider extends Component {
+    slideTimeout;
     state = {
         "index": 0
     }
     changePic = () => {
-        setTimeout(()=>{
+        this.slideTimout = setTimeout(()=>{
             if (this.state.index === photos.length - 1) {
                 this.setState({
                     "index": 0
@@ -27,7 +28,7 @@ export default class homeSlider extends Component {
     }
     
     componentWillUnmount(){
-        clearTimeout(this.changePic)
+        clearTimeout(this.slideTimout)
     }
 
     render() {
