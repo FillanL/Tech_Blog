@@ -9,13 +9,13 @@ export default class featItems extends Component {
             <div className="feat_item">
                 <img srcSet="https://images.unsplash.com/photo-1491198246568-ea47742734b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="something"/>
                 <div>
-                    <h2>Title of post</h2>
+                    <h2>{this.props.article.articleTitle}</h2>
                     <article>
                         <p>
-                            lorm uerb as aenfjans askdnaksdka
+                            {this.props.article.articleContent.substring(0,50)}
                         </p>
                     <br></br>
-                    <Link to={`/article/${this.props.id}`}> Read more</Link>
+                    <Link to={`/article/${this.props.article._id}`}> Read more</Link>
                     </article>
                 </div>
             </div>

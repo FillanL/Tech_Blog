@@ -1,41 +1,45 @@
-import React, { Component } from 'react'
-import FeaturedItems from './featItems'
+import React, { useEffect } from 'react'
+import {useDispatch, useSelector} from 'react-redux'
 
+import FeaturedItems from './featItems'
 import InfoSection from './infoSection';
-import '../CSS/home.scss'
 import RandomPost from './randomPost';
 import HomeAside from './homeAside';
 import HomeSlider from './homeSlider';
+import { getArticles } from '../Service/articleService';
 
-export default class home extends Component {
-    render() {
-        const items = [1,2,3]
-        // const photos = ["https://unsplash.com/photos/0pKQk1yyfbo", "https://unsplash.com/photos/xrVDYZRGdw4","https://unsplash.com/photos/95YRwf6CNw8", "https://unsplash.com/photos/ipARHaxETRk"]
-        return (
-            <div className="home">
-                
-               <div className="row">
-                   <div className="main">
-                      <HomeSlider />
-                   </div>
-                   <div className="feat">
-                        {items.map(article =>
-                        <FeaturedItems id={article} key={article} />
-                            )}
-                   </div>
-               </div>
-               {/* <div> */}
+import '../CSS/home.scss'
 
-               <InfoSection/>
-               {/* </div> */}
+const Home = () => {
+    const dispatch = useDispatch() 
+    const articles = useSelector(state => state.content.articles)
+    useEffect(() => {
+        dispatch(getArticles())
+    }, [dispatch])
 
-               <div className="bottom_section">
-                   <RandomPost/>
-                   <HomeAside/>
-               </div>
-              
+    return (
+        <div className="home">
 
+            <div className="row">
+                <div className="main">
+                    <HomeSlider />
+                </div>
+                <div className="feat">
+                    {articles[0] ? 
+                        (articles.slice(0,3).map(article =>
+                            <FeaturedItems id={article._id} key={article._id} article={article}/>
+                        )): console.log('not')
+                    }
+                </div>
             </div>
-        )
-    }
+            <InfoSection />
+            <div className="bottom_section">
+                <RandomPost />
+                <HomeAside />
+            </div>
+
+
+        </div>
+    )
 }
+export default Home
