@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Route, Switch} from 'react-router-dom'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 
+import { useDispatch} from 'react-redux'
+import {getArticles} from './Service/articleService'
 
 import Nav from './Components/topNav'
 import Footer from './Components/footer'
@@ -16,6 +18,10 @@ import AdminDash from './Components/adminDash';
 library.add(fab, faBars)
 
 function App() {
+  const dispatch = useDispatch() 
+  useEffect(() => {
+      dispatch(getArticles())
+  }, [dispatch])
 
   return (
     <div className="App">

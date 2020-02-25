@@ -1,21 +1,16 @@
-import React, { useEffect } from 'react'
-import {useDispatch, useSelector} from 'react-redux'
+import React from 'react'
+import {useSelector} from 'react-redux'
 
 import FeaturedItems from './featItems'
 import InfoSection from './infoSection';
 import RandomPost from './randomPost';
 import HomeAside from './homeAside';
 import HomeSlider from './homeSlider';
-import { getArticles } from '../Service/articleService';
 
 import '../CSS/home.scss'
 
 const Home = () => {
-    const dispatch = useDispatch() 
     const articles = useSelector(state => state.content.articles)
-    useEffect(() => {
-        dispatch(getArticles())
-    }, [dispatch])
 
     return (
         <div className="home">

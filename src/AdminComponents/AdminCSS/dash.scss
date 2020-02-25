@@ -1,0 +1,19 @@
+.active{
+    background-color: rgb(40, 243, 40);
+    border: 4px solid #3df02d;
+    line-height: 1;
+    width: 5px;
+    height: 1px;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+.deactive{
+    background-color: rgb(243, 40, 40);
+    border: 4px solid rgb(243, 40, 40);
+    border-radius: 100%;
+    width: 5px;
+    height: 1px;
+    margin-right: 3px;
+    margin-left: 5px;
+}
