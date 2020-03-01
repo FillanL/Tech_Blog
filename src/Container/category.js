@@ -28,11 +28,11 @@ function category() {
         </div>
         <div className="col-70-30 category container-margin">
             <div className='row'>
-                <Post/>
+                <Post num={4}/>
             </div>
             <div className="row ad-section">
                 <div className="ad-box">
-                    <img src="" alt="" srcset=""/>
+                    <img src="" alt="" srcSet=""/>
                 </div>
                 <div className="ad-box">
 

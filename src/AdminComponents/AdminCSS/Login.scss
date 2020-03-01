@@ -1,0 +1,25 @@
+.login_form{
+    background-color: rgb(243, 200, 232);
+    height: 100vh;
+    .signin_form{
+        background-color: skyblue;
+        box-sizing: border-box;
+        width: 300px;
+        height: 40%;
+        top: 40%;
+        margin: 0 auto;
+        box-shadow: 3px 5px 5px rgba(163, 163, 163, 0.651);
+        .form_formatting{
+
+            display: grid;
+            grid-template-rows: auto;
+            padding: 10px;
+            input{
+                padding: 0 5px;
+                font-size: 16px;
+                height: 25px;
+                // width: 100%;
+            }
+        }
+    }
+}

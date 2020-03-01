@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import '../CSS/footer.scss'
 import { useSelector } from 'react-redux';
@@ -14,7 +14,7 @@ const Footer = () => {
                     <li>
                         <Link to='/'>
                             Home
-                            </Link>
+                        </Link>
                     </li>
                     <li>Explore</li>
                     <li>JavaScript</li>
@@ -26,12 +26,12 @@ const Footer = () => {
                 <h3>Quick Link</h3>
                 <ul>
                     {articles.slice(articles.length-4).map(
-                        article => <li><Link to={`/article/${article._id}`}>{article.articleTitle}</Link></li>
+                        article => <li key={article.articleTitle+''+article._id}>
+                            <Link to={`/article/${article._id}`}>
+                                {article.articleTitle.substring(0,27)}...
+                            </Link>
+                            </li>
                     )}
-                    {/* <li>top 5 sdnljsn</li>
-                    <li> Why not to serbsiln eifn </li>
-                    <li>where to get sttarted</li>
-                    <li>How to sfdb  jns kj</li> */}
                 </ul>
             </div>
             <div>

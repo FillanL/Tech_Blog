@@ -1,9 +1,10 @@
 import React from 'react'
-import LogIn from '../AdminComponents/LogIn'
+import LogIn from './LogIn'
 
 import '../AdminComponents/AdminCSS/dash.scss'
-import Editor from '../AdminComponents/Editor'
-import AllArticles from '../AdminComponents/AllArticles'
+import ArticleForm from './newArticleForm'
+import AllArticles from './AllArticles'
+import AdminNav from './adminNav'
 
 export default function AdminDash() {
     
@@ -11,6 +12,7 @@ export default function AdminDash() {
     return (
         <div>
             <div>
+                <AdminNav/>
 
             <span className="active"></span> Active
             
@@ -21,7 +23,7 @@ export default function AdminDash() {
             <button> View all Post</button>
             <LogIn />
 
-            <Editor/>
+            <ArticleForm/>
 
             <AllArticles/>
         </div>

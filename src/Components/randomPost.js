@@ -5,12 +5,16 @@ import { useSelector } from 'react-redux'
 import {generateRandomNum} from '../Service/ServiceAlgo'
 import '../CSS/random_post.scss'
 
-const RandomPost = ()=>{
+const RandomPost = (props)=>{
+    let noMargin = 'repeat(4, 25%)'
+
+    if (props.num !== 4){
+        noMargin=''
+    }
     const articles = useSelector(state => state.content.articles)
-    const articleRange = generateRandomNum(articles.length,3)
-    console.log(articleRange, articles.length)
+    const articleRange = generateRandomNum(articles.length,props.num || 3)
     return (
-        <section className="random_post">
+        <section className="random_post" style={{gridTemplateRows:noMargin}}>
             {articles.slice(articleRange.start,articleRange.end).map(post => 
                 <div className="rando" key={ post._id}>
                     <img srcSet="https://images.unsplash.com/photo-1557858310-9052820906f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="stuff" />
