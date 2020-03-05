@@ -4,6 +4,11 @@ import './AdminCSS/newArticleForm.scss'
 function newArticleForm() {
     return (
         <div className="new_form_container">
+            <div className="back_btn_container">
+                <span className="back_btn">
+                    back
+                </span>
+            </div>
             <form>
                 {/* <label>
                     Article Title

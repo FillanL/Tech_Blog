@@ -1,24 +1,71 @@
 .login_form{
+    // display: grid;
     background-color: rgb(243, 200, 232);
     height: 100vh;
+    .back_btn_container{
+        margin-top: 20px;
+        // grid-column-start: 1;
+        // grid-column-end: 4;
+        .back_btn{
+            padding: 5px;
+            box-shadow: 2px 3px 3px rgba(163, 163, 163, 0.849);
+            background-color: rgb(255, 168, 168);
+            text-transform: capitalize;
+            cursor: pointer;
+            &:hover{
+                box-shadow: none;
+                border: 1px solid rgb(255, 255, 255);
+            }
+        }
+    }
     .signin_form{
-        background-color: skyblue;
+        display: grid;
+        // position: relative;
+        background-color: rgb(255, 255, 255);
         box-sizing: border-box;
         width: 300px;
-        height: 40%;
-        top: 40%;
-        margin: 0 auto;
-        box-shadow: 3px 5px 5px rgba(163, 163, 163, 0.651);
+        height: 350px;
+        margin: auto;
+        padding-top: 2%;
+        box-shadow: 3px 5px 5px rgba(163, 163, 163, 0.65);
+        h2{
+            margin: auto;
+        }
         .form_formatting{
-
+            box-sizing: border-box;
+            // position: relative;
+            // margin-top: 50px;
+            width: 100%;
+            height: 60%;
             display: grid;
             grid-template-rows: auto;
-            padding: 10px;
+            grid-gap: 35px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
             input{
                 padding: 0 5px;
                 font-size: 16px;
                 height: 25px;
-                // width: 100%;
+                outline: none;
+                border:  none;
+                letter-spacing: 2px;
+                border-bottom: 1px solid rgba(163, 163, 163, 0.842);
+            }
+            button{
+                box-sizing: border-box;
+                margin: 0 auto;
+                width: 50%;
+                outline: none;
+                padding: 5px;
+                font-weight: 600;
+                background-color: white;
+                border:  1px solid rgb(212, 212, 212);
+                box-shadow: 3px 4px 4px rgba(163, 163, 163, 0.753);
+                cursor: pointer;
+                &:hover{
+                    border:2px solid rgb(129, 255, 27);
+                    box-shadow: none;
+                }
             }
         }
     }

@@ -2,6 +2,22 @@
     box-sizing: border-box;
     background-color: rgba(201, 120, 120, 0.966);
     height: 100vh;
+    .back_btn_container{
+        margin-top: 20px;
+        // grid-column-start: 1;
+        // grid-column-end: 4;
+        .back_btn{
+            padding: 5px;
+            box-shadow: 2px 3px 3px rgba(163, 163, 163, 0.849);
+            background-color: rgb(255, 168, 168);
+            text-transform: capitalize;
+            cursor: pointer;
+            &:hover{
+                box-shadow: none;
+                border: 1px solid rgb(255, 255, 255);
+            }
+        }
+    }
     form{
         padding: 15px;
         margin: auto;
