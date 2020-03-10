@@ -1,28 +1,69 @@
-.new_form_container{
+.new_form_container {
     box-sizing: border-box;
-    background-color: rgba(201, 120, 120, 0.966);
+    // background-color: rgba(201, 120, 120, 0.966);
     height: 100vh;
-    .back_btn_container{
+
+    .back_btn_container {
         margin-top: 20px;
+
         // grid-column-start: 1;
         // grid-column-end: 4;
-        .back_btn{
+        .back_btn {
             padding: 5px;
             box-shadow: 2px 3px 3px rgba(163, 163, 163, 0.849);
             background-color: rgb(255, 168, 168);
             text-transform: capitalize;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 box-shadow: none;
                 border: 1px solid rgb(255, 255, 255);
             }
         }
     }
-    form{
-        padding: 15px;
-        margin: auto;
-        width: 60%;
-        top:30%;
-        background-color: sienna;
+
+    .ql-editor {
+        height: 300px;
     }
+
+    .metaContainer {
+        box-sizing: border-box;
+        width: 80%;
+        margin: 30px auto 0 auto;
+
+        input {
+            margin: 10px 0;
+            margin-left: 10%;
+            margin-bottom: 10px;
+            width: 80%;
+            height: 30px;
+            outline: none;
+            border: none;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+    
+    .editorContainer {
+        width: 80%;
+        margin: 10px auto;
+        .submitBtn {
+            margin: 10px 0;
+            text-align: right;
+            padding: 10px;
+            background-color: rgb(195, 243, 176);
+            box-shadow: 2px 3px 3px rgba(163, 163, 163, 0.849);
+            color: rgb(0, 0, 0);
+            border: none;
+            outline: none;
+            font-size: 16px;
+            cursor: pointer;
+            float: right;
+    
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+
 }
