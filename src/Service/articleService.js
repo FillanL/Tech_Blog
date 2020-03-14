@@ -29,7 +29,7 @@ export const postArticle = (article) => {
         .then(res => res)
 }
 
-export const updateArticle = () => {
+export const updateArticle = () => async dispatch => {
     return fetch('http://localhost:3004/articles', {
         method: 'PATCH',
         headers: {
@@ -42,10 +42,9 @@ export const updateArticle = () => {
         .then(res => res)
 }
 
-export const deleteArticle = (articleId) => {
-    return fetch('http://localhost:3004/articles', {
+export const deleteArticle = (articleId) =>{
+    return fetch(`http://localhost:3004/articles/${articleId}`, {
         method: 'DELETE'
     })
-    // .then(res => res.json())
-    // .then(res => res)
+    .then(res => res.json())
 }

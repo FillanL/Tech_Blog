@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactQuill from 'react-quill';
+import {postArticle} from '../Service/articleService'
 import 'react-quill/dist/quill.snow.css';
 import './AdminCSS/newArticleForm.scss'
 
-function newArticleForm() {
+function NewArticleForm(props) {
+    const [articleObj] = useState({})
+    const setChanges = (e,y)=>{
+        articleObj[y]=e
+        console.log(articleObj, Date.now())
+    }
+    
+
+    // console.log(articleObj)
     return (
         <div className="new_form_container">
             <div className="back_btn_container">
@@ -12,15 +21,27 @@ function newArticleForm() {
                 </span>
             </div>
             <div className='metaContainer'>
-                <input type="text" maxLength='80' placeholder="Article Title" /> 
+                <input 
+                    onChange={(event) => setChanges(event.target.value,'article_title')}
+                    type="text" 
+                    maxLength='80' 
+                    placeholder="Article Title" 
+                    /> 
                 <br></br>
-                <input type="file" style={{width:'auto'}} /><br></br>
+                <input type="file" style={{width:'auto'}} />
+                <br></br>
+                <input 
+                    // onChange={(x) => console.log(x,'articleBdy')}
+                    type='datetime-local'
+                    // value={new Date()}
+                    onChange={(event) => setChanges(event.target.value,'articleLiveDate')}
+                />
             </div>
 
             <div className="editorContainer">
                 <ReactQuill
                     style={{ backgroundColor: 'white' }}
-                    onChange={(x) => console.log(x)}
+                    onChange={(x) => setChanges(x,'article_content')}
                     theme='snow'
                     placeholder={"Start typing heree..."}
                     modules={{
@@ -36,10 +57,10 @@ function newArticleForm() {
                         ]
                     }}
                 />
-                <button className="submitBtn">Submit</button>
+                <button className="submitBtn" onClick={()=> postArticle(articleObj)} >Submit</button>
             </div>
         </div>
     )
 }
 
-export default newArticleForm
+export default NewArticleForm
