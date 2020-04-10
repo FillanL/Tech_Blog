@@ -1,6 +1,10 @@
-.App{
+/* ::root{
+  --prim_color: red;
+} */
 
-}
+/* .App{
+ 
+} */
 .Container{
   min-height: 100vh;
 }

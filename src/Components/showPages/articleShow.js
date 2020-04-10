@@ -24,6 +24,7 @@ const ArticleShow = (props) => {
             return (
             <div>
                 LOADDIING...
+                <p>hereeee</p>
             </div>)
         }
     }

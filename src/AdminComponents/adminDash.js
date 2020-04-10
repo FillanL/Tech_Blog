@@ -18,7 +18,7 @@ export default function AdminDash() {
             
             </div>
             <br></br>
-            admin herer
+            {/* admin herer */}
             <button>Add new Post</button>
             <button> View all Post</button>
             <LogIn />

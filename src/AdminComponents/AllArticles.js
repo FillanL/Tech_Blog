@@ -1,4 +1,4 @@
-import React, {useDispatch} from 'react'
+import React, {} from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
@@ -6,15 +6,11 @@ import {deleteArticle} from '../Service/articleService'
 import './AdminCSS/allArticles.scss'
 
 function AllArticles() {
-    // const dispatch = useDispatch() 
     const articles = useSelector(state => state.content.articles)
     const dele = (e,article)=>{
         let isConfirm = window.confirm('are you sure ?')
          if (isConfirm){
             deleteArticle(article._id)
-            // .then(res=>
-            //     articles.filter(x=> x._id !== res._id)
-            // )
             return "ckd"
         }
         return
@@ -51,7 +47,8 @@ function AllArticles() {
         } else {
             return (
                 <div>
-                    loaaadinng
+                    {console.log("not fetched")}
+                    loaaadinng...
             </div>
             )
         }

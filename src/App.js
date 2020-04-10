@@ -14,6 +14,7 @@ import ArticleShow from './Components/showPages/articleShow';
 import Category from './Container/category'
 import './App.css';
 import AdminDash from './AdminComponents/adminDash';
+import Errorpage from './Components/errorpage';
 
 library.add(fab, faBars)
 
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/article/:id" component={ArticleShow} />
             <Route exact path="/category" component={Category} />
             <Route exact path="/Dash" component={AdminDash} />
+            <Route exact path="*" component={Errorpage} />
           </Switch>
         </div>
       <Footer/>

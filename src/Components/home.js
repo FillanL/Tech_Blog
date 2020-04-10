@@ -14,7 +14,6 @@ const Home = () => {
 
     return (
         <div className="home">
-
             <div className="row">
                 <div className="main">
                     <HomeSlider />
@@ -23,7 +22,10 @@ const Home = () => {
                     {articles[0] ? 
                         (articles.slice(0,3).map(article =>
                             <FeaturedItems id={article._id} key={article._id} article={article}/>
-                        )): console.log('not')
+                        )): 
+                        ([0,1,2,3,4].slice(0,3).map(article =>
+                            <FeaturedItems id={article} key={article}/>
+                        ))
                     }
                 </div>
             </div>
@@ -32,8 +34,6 @@ const Home = () => {
                 <RandomPost />
                 <HomeAside />
             </div>
-
-
         </div>
     )
 }

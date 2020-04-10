@@ -6,13 +6,15 @@ import './AdminCSS/newArticleForm.scss'
 
 function NewArticleForm(props) {
     const [articleObj] = useState({})
-    const setChanges = (e,y)=>{
-        articleObj[y]=e
-        console.log(articleObj, Date.now())
+
+    const setChanges = (eventValue,inputValue)=>{
+        articleObj[inputValue]=eventValue
+    }
+
+    const submitForm = async() => {
+        await postArticle(articleObj)
     }
     
-
-    // console.log(articleObj)
     return (
         <div className="new_form_container">
             <div className="back_btn_container">
@@ -28,18 +30,23 @@ function NewArticleForm(props) {
                     placeholder="Article Title" 
                     /> 
                 <br></br>
+                <input 
+                    onChange={(event) => setChanges(event.target.value,'article_description')}
+                    type="text" 
+                    maxLength='80' 
+                    placeholder="Article Description" 
+                    /> 
+                <br></br>
                 <input type="file" style={{width:'auto'}} />
                 <br></br>
                 <input 
-                    // onChange={(x) => console.log(x,'articleBdy')}
                     type='datetime-local'
-                    // value={new Date()}
                     onChange={(event) => setChanges(event.target.value,'articleLiveDate')}
                 />
             </div>
 
             <div className="editorContainer">
-                <ReactQuill
+                 <ReactQuill
                     style={{ backgroundColor: 'white' }}
                     onChange={(x) => setChanges(x,'article_content')}
                     theme='snow'
@@ -56,8 +63,8 @@ function NewArticleForm(props) {
                             ['clean']
                         ]
                     }}
-                />
-                <button className="submitBtn" onClick={()=> postArticle(articleObj)} >Submit</button>
+                /> 
+                <button className="submitBtn" onClick={()=> submitForm()} >Submit</button>
             </div>
         </div>
     )
