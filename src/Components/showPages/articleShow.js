@@ -1,6 +1,6 @@
 import React from 'react'
 // { MetaHTMLAttributes }
-import '../../CSS/article_page.scss'
+import './article_page.scss'
 import { useSelector } from 'react-redux'
 
 const ArticleShow = (props) => {
@@ -13,12 +13,13 @@ const ArticleShow = (props) => {
         if (article) {
             return (
             <>
-                <h1>
+                <h1 className="article_title">
                     {article.articleTitle}
                 </h1>
-                <p>
-                    {article.articleContent}
-                </p>
+                <div 
+                    className="content_body"
+                    dangerouslySetInnerHTML={{ __html: article.articleContent }}
+                />
             </>)
         } else {
             return (
@@ -37,12 +38,11 @@ const ArticleShow = (props) => {
 
             <div className="info-section">
                 <main>
-
                     <article>
                         {layout()}
                     </article>
                 </main>
-                <div className="article-sideBar">
+                <div className="article_sideBar">
                     <a href="https://www.siteground.com/web-hosting.htm?afbannercode=96d01173979b355bccee514d041b7119">
                         <img src="https://ua.siteground.com/img/banners/general/2019_EN/no_price/general_hosting_250x250_light.jpg" alt="Web Hosting"
                             width="100%" height="250" border="0"

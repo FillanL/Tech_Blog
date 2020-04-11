@@ -15,7 +15,7 @@ export default class featItems extends Component {
                         <h2>{this.props.article.articleTitle.substring(0,24)}{this.props.article.articleTitle.length >= 24 ? "...": null }</h2>
                         <article>
                             <p>
-                                {this.props.article.articleContent.substring(0,50)}
+                                {this.props.article.articleDescription.substring(0,50)}
                             </p>
                         <br></br>
                         <Link to={`/article/${this.props.article._id}`}> Read more</Link>
