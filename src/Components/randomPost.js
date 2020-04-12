@@ -42,10 +42,17 @@ const RandomPost = (props)=>{
                             dslnalja smf asalnslas
                         </h2>
                         <article>
-                            <p>
-                                "dssdfdsfsdvd"...
-                                {/* {console.log(articleRange, articles)} */}
-                            </p>
+                            <div>
+                                <div 
+                                    style={{backgroundColor: "rgb(205,203,204)", height:"1rem"}}
+                                />
+                                <div 
+                                    style={{backgroundColor: "rgb(205,203,204)", height:"1rem",marginTop:"8px"}}
+                                />
+                                <div 
+                                    style={{backgroundColor: "rgb(205,203,204)", height:"1rem",marginTop:"8px"}}
+                                />
+                            </div>
                             <br></br>
                             <Link to=""> Read More</Link>
                         </article>
