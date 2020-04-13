@@ -20,11 +20,6 @@ function AllArticles() {
         if (articles) {
             return (
                 <div className="admin_article_container">
-                    <div className="back_btn_container">
-                        <span className="back_btn">
-                        back
-                        </span>
-                    </div>
                     {articles.map(article =>
                         <div className="admin_article_card" key={article._id}>
                             <div className="card_title_section">

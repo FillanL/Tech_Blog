@@ -10,14 +10,11 @@ import AdminNav from './adminNav'
 export default function AdminDash() {
     const [activePage, changeRoute] = useState("logIn")
     const userkey = localStorage.getItem("mlogic")
-    // const state = {
-    //     activePage:"logIn"
-    // }
     
 console.log(activePage)
 
     return (
-        <div className="">
+        <>
             { userkey ?
                 <>
                     <div>
@@ -45,6 +42,6 @@ console.log(activePage)
                     <AllArticles/> :
                     <Redirect to='/' />
             }
-        </div>
+        </>
     )
 }

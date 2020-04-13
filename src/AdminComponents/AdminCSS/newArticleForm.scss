@@ -1,36 +1,13 @@
 .new_form_container {
     box-sizing: border-box;
-    // background-color: rgba(201, 120, 120, 0.966);
     height: 100vh;
-
-    .back_btn_container {
-        margin-top: 20px;
-
-        // grid-column-start: 1;
-        // grid-column-end: 4;
-        .back_btn {
-            padding: 5px;
-            box-shadow: 2px 3px 3px rgba(163, 163, 163, 0.849);
-            background-color: rgb(255, 168, 168);
-            text-transform: capitalize;
-            cursor: pointer;
-
-            &:hover {
-                box-shadow: none;
-                border: 1px solid rgb(255, 255, 255);
-            }
-        }
-    }
-
     .ql-editor {
         height: 300px;
     }
-
     .metaContainer {
         box-sizing: border-box;
         width: 80%;
         margin: 30px auto 0 auto;
-
         input {
             margin: 10px 0;
             margin-left: 10%;
@@ -43,7 +20,6 @@
             text-align: center;
         }
     }
-    
     .editorContainer {
         width: 80%;
         margin: 10px auto;
@@ -59,11 +35,9 @@
             font-size: 16px;
             cursor: pointer;
             float: right;
-    
             &:hover {
                 box-shadow: none;
             }
         }
     }
-
 }
