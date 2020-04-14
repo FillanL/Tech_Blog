@@ -13,7 +13,7 @@ import Home from './Components/home'
 import ArticleShow from './Components/showPages/articleShow';
 import Category from './Container/category'
 import './App.css';
-import AdminDash from './AdminComponents/adminDash';
+import AdminDash from './Components/AdminComponents/adminDash';
 import Errorpage from './Components/errorpage';
 
 library.add(fab, faBars)

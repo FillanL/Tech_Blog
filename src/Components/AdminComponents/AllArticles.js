@@ -2,7 +2,7 @@ import React, {} from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import {deleteArticle} from '../Service/articleService'
+import {deleteArticle} from '../../Service/articleService'
 import './AdminCSS/allArticles.scss'
 
 function AllArticles() {
@@ -17,7 +17,7 @@ function AllArticles() {
     }
 
     const layout = () => {
-        if (articles) {
+        if (articles.length > 0 ) {
             return (
                 <div className="admin_article_container">
                     {articles.map(article =>
@@ -37,14 +37,15 @@ function AllArticles() {
                         </div>
                     )}
                 </div>
-
             )
         } else {
             return (
                 <div>
-                    {console.log("not fetched")}
-                    loaaadinng...
-            </div>
+                    <p style={{textAlign:"center", marginTop:"80px"}}>
+
+                        Trying to Connect.....
+                    </p>
+                </div>
             )
         }
     }

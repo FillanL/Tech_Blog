@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ReactQuill from 'react-quill';
-import {postArticle} from '../Service/articleService'
+import {postArticle} from '../../Service/articleService'
 import 'react-quill/dist/quill.snow.css';
 import './AdminCSS/newArticleForm.scss'
 
