@@ -42,7 +42,6 @@ function AllArticles() {
             return (
                 <div>
                     <p style={{textAlign:"center", marginTop:"80px"}}>
-
                         Trying to Connect.....
                     </p>
                 </div>

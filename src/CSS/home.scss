@@ -41,7 +41,7 @@
             // width: 100%;
             display: grid;
             grid-template-rows: repeat(3, 32%);
-            grid-row-gap: 1%;
+            // grid-row-gap: 1%;
         }
     }
     .boxx{
@@ -77,8 +77,8 @@
             grid-template-rows: auto;
             grid-row-gap: 10px;
             .feat{
-                grid-template-rows: repeat(3, 30%);
-                // grid-row-gap: 3%;
+                grid-template-rows: repeat(3, 32%);
+                grid-row-gap: 1%;
 
             }
         }

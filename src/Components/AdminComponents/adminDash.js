@@ -6,7 +6,6 @@ import LogIn from './LogIn'
 import './AdminCSS/dash.scss'
 import ArticleForm from './newArticleForm'
 import AllArticles from './AllArticles'
-import AdminNav from './adminNav'
 
 export default function AdminDash() {
     const [activePage, changeRoute] = useState("logIn")
@@ -21,7 +20,6 @@ export default function AdminDash() {
             { userkey ?
                 <>
                     <div>
-                        {/* <AdminNav/> */}
                         <span 
                             className={articles.length> 0 ? "active":"deactive"} 
                         /> 

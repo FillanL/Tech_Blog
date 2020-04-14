@@ -38,24 +38,23 @@ const RandomPost = (props)=>{
                 <div className="rando" key={post}>
                     <img srcSet="https://images.unsplash.com/photo-1557858310-9052820906f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="stuff" />
                     <div className="random_section_container">
-                        <h2>
-                            dslnalja smf asalnslas
-                        </h2>
-                        <article>
-                            <div>
-                                <div 
-                                    style={{backgroundColor: "rgb(205,203,204)", height:"1rem"}}
-                                />
-                                <div 
-                                    style={{backgroundColor: "rgb(205,203,204)", height:"1rem",marginTop:"8px"}}
-                                />
-                                <div 
-                                    style={{backgroundColor: "rgb(205,203,204)", height:"1rem",marginTop:"8px"}}
-                                />
+                        <div 
+                            style={{backgroundColor: "rgb(205,203,204)", height:"1.5rem", width:"60%",padding: "", margin:" 0px auto 15px auto"}}
+                        />
+                        <div className="article">
+                            <div 
+                                style={{backgroundColor: "rgb(205,203,204)", height:"1rem", width:"98%", margin:"0px auto auto "}}
+                            />
+                            <div 
+                                style={{backgroundColor: "rgb(205,203,204)", height:"1rem", width:"98%",margin:"8px auto auto "}}
+                            />
+                            <div 
+                                style={{backgroundColor: "rgb(205,203,204)", height:"1rem", width:"98%",margin:"8px auto auto "}}
+                            />
+                            <div className="read_btn">
+                                <Link to="#"> Read More</Link>
                             </div>
-                            <br></br>
-                            <Link to=""> Read More</Link>
-                        </article>
+                        </div>
                     </div>
                 </div>
             )
