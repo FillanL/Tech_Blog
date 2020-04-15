@@ -23,10 +23,12 @@ export default class featItems extends Component {
                             <p>
                                 {this.props.article.articleDescription.substring(0,50)}
                             </p>
-                        <br></br>
-                        <Link to={`/article/${this.props.article._id}`}> 
-                            Read more
-                        </Link>
+                        {/* <br></br> */}
+                            <div className="read_btn">
+                                <Link to={`/article/${this.props.article._id}`}> 
+                                    Read more
+                                </Link>
+                            </div>
                         </article> 
                     </div>
                 </>
