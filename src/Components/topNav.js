@@ -14,7 +14,6 @@ export default class topNav extends Component {
 
     render() {
         return (
-
             <nav>
                 <div className="grid-90-10">
                     <h2>
@@ -42,11 +41,6 @@ export default class topNav extends Component {
                             Home
                             </Link>
                     </li>
-                    {/* <li>
-                            <Link to='/Explore'>
-                                Explore
-                            </Link>
-                        </li> */}
                     <li>
                         <Link to='/category'>
                             How To

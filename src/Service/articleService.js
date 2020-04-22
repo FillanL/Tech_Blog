@@ -1,14 +1,7 @@
-
-
-// export const getArticles = async() => {
-//     await fetch('http://localhost:3004/articles')
-//         .then(res => res.json())
-//         .then(articles => {console.log(articles, 1)
-//         return articles})
-// }
+let baseURL = "http://localhost:3004"
 
 export const getArticles = () => async dispatch =>{
-    await fetch('http://localhost:3004/articles')
+    await fetch(`${baseURL}/articles`)
         .then(res => res.json())
         .then(articles => dispatch({
             type:"GET_ARTICLES",
