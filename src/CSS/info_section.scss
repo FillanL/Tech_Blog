@@ -1,11 +1,6 @@
 section{
-    // position: relative;
-    // background-color: aquamarine;
     display: grid;
     grid-template-columns: repeat(3, 32%);
-    // align-content: center;
-    // position: relative;
-
     width: 80%;
     margin: 0 auto;
     grid-column-gap: 2%;

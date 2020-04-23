@@ -14,21 +14,21 @@ export default class featItems extends Component {
                         srcSet="https://images.unsplash.com/photo-1491198246568-ea47742734b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" 
                         alt="something"
                     />
-                    <div>
+                    <div className="article_detail">
                         <h2>
                             {this.props.article.articleTitle.substring(0,24)}{this.props.article.articleTitle.length >= 24 ? 
                             "..." : null }
                         </h2>
-                        <article className="article">
+                        <div className="article">
                             <p>
                                 {this.props.article.articleDescription.substring(0,50)}
                             </p>
                             <div className="read_btn">
                                 <Link to={`/article/${this.props.article._id}`}> 
-                                    Read more
+                                    Read More
                                 </Link>
                             </div>
-                        </article> 
+                        </div> 
                     </div>
                 </>
                     :

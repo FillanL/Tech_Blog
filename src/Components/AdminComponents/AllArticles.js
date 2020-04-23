@@ -32,7 +32,7 @@ function AllArticles() {
                                     </button>
                                 </Link>
                                 <button>Edit</button>
-                                <button onClick={(e)=>dele(e,article)}>Delete</button>
+                                <button style={{borderColor:"red"}} onClick={(e)=>dele(e,article)}>Delete</button>
                             </div>
                         </div>
                     )}

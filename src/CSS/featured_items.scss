@@ -20,6 +20,7 @@
         // height: 100%;
         .article{
             // background-color: brown;
+            box-sizing: border-box;
             grid-column-start: 2;
             grid-column-end: 3;
             max-height: 70%;
@@ -27,7 +28,8 @@
             overflow: hidden;
             margin-right: 8px;
             .read_btn{
-                // box-sizing: border-box;
+                // letter-spacing: 1.5px;
+                margin-top: 7px;
                 width: 70px;
                 height: 26px;
                 border: 0px  rgb(202, 202, 202) solid;
@@ -36,16 +38,11 @@
                 padding: 0.7px 4px;
 
                 a{
-                    // position: i;
-                    // text-decoration-thickness: ;
                     display: block;
-                    // position: inherit;
-                    // height: 25px;
                     color: black;
                     text-decoration: none;
                     font-size: 14px;
                     font-weight: 600;
-                    // margin: auto;
                     margin-top: 4px;
                 }
             }

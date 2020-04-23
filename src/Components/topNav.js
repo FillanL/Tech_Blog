@@ -52,7 +52,7 @@ export default class topNav extends Component {
                             </Link>
                     </li>
                     <li>
-                        <Link to='/Explore'>
+                        <Link to='/dash'>
                             Data structures
                             </Link>
                     </li>
