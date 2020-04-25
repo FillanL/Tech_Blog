@@ -44,13 +44,13 @@ export default class topNav extends Component {
                     <li>
                         <Link to='/category'>
                             How To
-                            </Link>
+                        </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to='/Explore'>
                             Programing Languages
-                            </Link>
-                    </li>
+                        </Link>
+                    </li> */}
                     <li>
                         <Link to='/dash'>
                             Data structures

@@ -3,48 +3,107 @@ import { Link } from 'react-router-dom';
 import '../CSS/footer.scss'
 import { useSelector } from 'react-redux';
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 const Footer = () => {
     const articles = useSelector(state => state.content.articles)
-
+    const mock = [0,1,2,3,]
     return (
         <footer>
-            <div>
-                <h3>Website title</h3>
-                <ul>
-                    <li>
-                        <Link to='/'>
-                            Home
+            <div className="section_wrapper">
+
+                <div>
+                    <h3>
+                        <Link style={{ textDecoration: 'none' }} to='/'>
+                            <span style={{ "color": "rgba(226,180,121)" }}>Minimal</span>.<span style={{ "color": "rgba(206,102,215,.8)" }}>Logic</span><span style={{ "color": "rgba(206,151,249)" }}>()</span>
                         </Link>
-                    </li>
-                    <li>Explore</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Quick Link</h3>
-                <ul>
-                    {articles.slice(articles.length-4).map(
-                        article => <li key={article.articleTitle+''+article._id}>
-                            <Link to={`/article/${article._id}`}>
-                                {article.articleTitle.substring(0,27)}...
+                    </h3>
+                    <ul>
+                        <li>
+                            <Link to='/'>
+                                Home
                             </Link>
+                        </li>
+                        {/* <li>Explore</li> */}
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Quick Link</h3>
+                    <ul>
+                        {articles.length ?
+                        articles.slice(articles.length-4).map(
+                            article => <li key={article.articleTitle+''+article._id}>
+                                <Link to={`/article/${article._id}`}>
+                                    {article.articleTitle.substring(0,27)}...
+                                </Link>
+                                </li>
+                        ):
+                        mock.map(m =>
+                            <li>
+                                <div 
+                                style={{backgroundColor: "rgb(205,203,204)", height:"1rem", width:"98%",margin:"20px auto auto "}}
+                            />
                             </li>
-                    )}
-                </ul>
+                        )
+                        
+                        }
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3> Social Media</h3>
+
+            <div className="social_wrapper">
+                {/* <h3> Social Media</h3> */}
                 <ul>
                     <li>
-                        <a href="facebook.com"> facebook</a>
+                        <a href="https://facebook.com"> 
+                            <FontAwesomeIcon
+                                icon={['fab', 'facebook-f']} 
+                                size="lg"
+                                color="rgb(59,89,189)"
+                            />
+                        </a>
                     </li>
                     <li>
-                        <a href="facebook.com"> Instagram</a>
+                        <a href="https://instagram.com"> 
+                            <FontAwesomeIcon
+                                icon={['fab', 'instagram']}
+                                size="lg"
+                                color="purple"
+                            />
+                        </a>
                     </li>
                     <li>
-                        <a href="facebook.com">Twitter</a>
+                        <a href="https://twitter.com">
+                            <FontAwesomeIcon
+                                icon={['fab', 'twitter']} 
+                                size="lg"
+                                color="rgb(29,202,255)"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com">
+                        <FontAwesomeIcon
+                            icon={['fab', 'medium']} 
+                            size="lg"
+                            color=""
+                        />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCyjCBRHP2YJyapHU7wT2qyQ">
+                            <FontAwesomeIcon
+                                icon={['fab', 'youtube']} 
+                                size="lg"
+                                color="red"
+                            />
+                        </a>
                     </li>
                 </ul>
             </div>
