@@ -1,5 +1,6 @@
 import React from 'react'
 // { MetaHTMLAttributes }
+import {Helmet} from "react-helmet"
 import './article_page.scss'
 import { useSelector } from 'react-redux'
 
@@ -13,6 +14,16 @@ const ArticleShow = (props) => {
         if (article) {
             return (
             <>
+                <Helmet>
+                    <title>
+                        {article.articleTitle}
+                    </title>
+                    <meta
+                        name="description"
+                        content={article.articleDescription}
+                    />
+                </Helmet>
+
                 <h1 className="article_title">
                     {article.articleTitle}
                 </h1>

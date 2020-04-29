@@ -1,5 +1,6 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
+import {Helmet} from 'react-helmet'
 
 import FeaturedItems from './featItems'
 import InfoSection from './infoSection';
@@ -14,6 +15,15 @@ const Home = () => {
 
     return (
         <div className="home">
+            <Helmet>
+                <title>
+                    Minimal Logic - Home 
+                </title>
+                <meta
+                    name="description"
+                    content="software engineering technology blog regarding coding etc"
+                />
+            </Helmet>
             <div className="row">
                 <div className="main">
                     <HomeSlider />
