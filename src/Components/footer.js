@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
     const articles = useSelector(state => state.content.articles)
     const mock = [0,1,2,3,]
+    // const grayColor = "rgb(205,203,204)"
     return (
         <footer>
             <div className="section_wrapper">
@@ -26,9 +27,12 @@ const Footer = () => {
                                 Home
                             </Link>
                         </li>
-                        {/* <li>Explore</li> */}
-                        <li>JavaScript</li>
-                        <li>Python</li>
+                        <li>About Us</li>
+                        <li>
+                            {/* <link to="/minimal-logic-privacy-policy"> */}
+                                Privacy Policy
+                            {/* </link> */}
+                        </li>
                         <li>Contact Us</li>
                     </ul>
                 </div>
@@ -65,7 +69,8 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={['fab', 'facebook-f']} 
                                 size="lg"
-                                color="rgb(59,89,189)"
+                                color="silver"
+                                // color={grayColor}
                             />
                         </a>
                     </li>
@@ -74,7 +79,8 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={['fab', 'instagram']}
                                 size="lg"
-                                color="purple"
+                                color="silver"
+                                // color={grayColor}
                             />
                         </a>
                     </li>
@@ -83,7 +89,8 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={['fab', 'twitter']} 
                                 size="lg"
-                                color="rgb(29,202,255)"
+                                // color={grayColor}
+                                color="silver"
                             />
                         </a>
                     </li>
@@ -92,7 +99,9 @@ const Footer = () => {
                         <FontAwesomeIcon
                             icon={['fab', 'medium']} 
                             size="lg"
-                            color=""
+                            color="silver"
+                            // color={grayColor}
+
                         />
                         </a>
                     </li>
@@ -101,7 +110,8 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={['fab', 'youtube']} 
                                 size="lg"
-                                color="red"
+                                // color={grayColor}
+                                color="silver"
                             />
                         </a>
                     </li>

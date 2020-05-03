@@ -43,13 +43,13 @@ export default class featItems extends Component {
                                 style={{backgroundColor: "gray", height:"1rem", marginBottom:"10px"}}
                             />
                             <div 
-                                style={{backgroundColor: "gray", height:"1rem",marginBottom:"10px"}}
+                                style={{backgroundColor: "rgb(205,203,204)", height:"1rem",marginBottom:"10px"}}
                             />
                             <div 
                                 style={{backgroundColor: "gray", height:"1rem",marginBottom:"10px"}}
                             />
                             <div className="read_btn">
-                                <Link to='#'> Read More</Link>
+                                <Link to='#'> Read </Link>
                             </div>
                         </div>
                     </div>
