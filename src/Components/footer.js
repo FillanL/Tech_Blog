@@ -49,7 +49,7 @@ const Footer = () => {
                                 </li>
                         ):
                         mock.map(m =>
-                            <li>
+                            <li key={m}>
                                 <div 
                                 style={{backgroundColor: "rgb(205,203,204)", height:"1rem", width:"98%",margin:"20px auto auto "}}
                             />

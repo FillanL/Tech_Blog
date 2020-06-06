@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
+import defualtImg from '../Images/Default.png'
 import '../CSS/featured_items.scss'
 
 export default class featItems extends Component {
@@ -11,8 +12,9 @@ export default class featItems extends Component {
                 this.props.article ?
                 <>
                     <img 
-                        srcSet="https://images.unsplash.com/photo-1491198246568-ea47742734b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" 
-                        alt="something"
+                 srcSet={`http://localhost:3004/articles/test/${this.props.article.articleImgUrl}`}
+                        alt={`${this.props.article.articleTitle
+                        }`}
                     />
                     <div className="article_detail">
                         <h2>
@@ -25,7 +27,7 @@ export default class featItems extends Component {
                             </p>
                             <div className="read_btn">
                                 <Link to={`/article/${this.props.article._id}`}> 
-                                    Read More
+                                    Read 
                                 </Link>
                             </div>
                         </div> 
@@ -33,7 +35,10 @@ export default class featItems extends Component {
                 </>
                     :
                 <>
-                 <img srcSet="https://images.unsplash.com/photo-1491198246568-ea47742734b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="something"/>
+                {/* //  https://images.unsplash.com/photo-1491198246568-ea47742734b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" */}
+                 <img 
+                 srcSet={defualtImg}
+                 alt="unavailable"/>
                     <div className="article_detail">
                         <div 
                             style={{backgroundColor: "rgb(205,203,204)", height:"1.6rem", width:"48%", marginBottom:"10px"}}

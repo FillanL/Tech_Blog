@@ -62,7 +62,7 @@ export default class homeSlider extends Component {
     render() {
         // this.changePic()
         
-        console.log(this.state)
+        // console.log(this.state)
 
         return (
 
