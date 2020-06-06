@@ -8,15 +8,16 @@ export default class infoSection extends Component {
             <div className="section_container">
                 <div className="section_info_card">
                     <p>TECH</p>
-                    <p>sruffsf sfsalfnsfa sa flansfa sasfa sl</p>
+                    <p style={{"padding":"10px 30px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, officiis. Eos sapiente nemo molestiae fugit 
+                    Eos sapiente nemo molestiae fugit. deserunt, provident facilis asperiores? Fugit temporibus illum deleniti ea necessitatibus, fugiat sit cum mollitia tenetur? </p>
                 </div>
                 <div className="section_info_card">
-                    <p>sruffsf sfsalfnsfa sa flansfa sasfa sl</p>
+                    <p style={{"padding":"10px 30px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, officiis. Eos sapiente nemo molestiae fugit deserunt, provident facilis asperiores? Fugit temporibus illum deleniti ea necessitatibus, fugiat sit cum mollitia tenetur?</p>
                     <p>TECH</p>
                 </div>
                 <div className="section_info_card">
                     <p>TECH</p>
-                    <p>sruffsf sfsalfnsfa sa flansfa sasfa sl</p>
+                    <p style={{"padding":"10px 30px"}}>sLorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, officiis. Eos sapiente nemo molestiae fugit deserunt, provident facilis asperiores? Fugit temporibus illum deleniti ea necessitatibus, fugiat sit cum mollitia tenetur?</p>
                 </div>
 
             </div>
