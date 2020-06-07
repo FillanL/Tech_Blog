@@ -20,7 +20,7 @@ const RandomPost = (props) => {
                 articles.slice(articleRange.start, articleRange.end).map(post =>
                     <div className="rando" key={post._id}>
                         <img
-                            srcSet={`http://localhost:3004/articles/test/${post.articleImgUrl}`}
+                            srcSet={`http://localhost:3004/articles/images/${post.articleImgUrl}`}
                             alt={`${post.articleTitle
                                 }`}
                         />

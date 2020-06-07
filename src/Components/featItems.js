@@ -12,7 +12,7 @@ export default class featItems extends Component {
                 this.props.article ?
                 <>
                     <img 
-                 srcSet={`http://localhost:3004/articles/test/${this.props.article.articleImgUrl}`}
+                 srcSet={`http://localhost:3004/articles/images/${this.props.article.articleImgUrl}`}
                         alt={`${this.props.article.articleTitle
                         }`}
                     />
@@ -35,7 +35,6 @@ export default class featItems extends Component {
                 </>
                     :
                 <>
-                {/* //  https://images.unsplash.com/photo-1491198246568-ea47742734b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" */}
                  <img 
                  srcSet={defualtImg}
                  alt="unavailable"/>

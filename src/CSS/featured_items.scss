@@ -1,13 +1,11 @@
 .feat_item{
     position: relative;
     background-color: #ffffff;
-    // margin-top: 1%;
     padding: 10px;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-column-gap: 2%;
     box-shadow: 0 3px 11px rgba(94, 96, 110, 0.363);
-    // grid-auto-rows: 1fr; no need
     img{
         max-height: 100%;
         min-height: 100%;
@@ -17,9 +15,7 @@
         grid-column-end: 2;
     }
     .article_detail{
-        // height: 100%;
         .article{
-            // background-color: brown;
             box-sizing: border-box;
             grid-column-start: 2;
             grid-column-end: 3;
@@ -28,7 +24,6 @@
             overflow: hidden;
             margin-right: 8px;
             .read_btn{
-                // letter-spacing: 1.5px;
                 margin-top: 7px;
                 width: 70px;
                 height: 26px;
@@ -49,15 +44,12 @@
         }
     }
     h2{
-        // background-color: pink;
         height: 30%;
     }
     
 }
 @media(max-width:700px){
     .feat_item{
-        // margin-bottom: 25px;
-        // grid-row-gap: 10%;
         height: 150px;
     }
 }

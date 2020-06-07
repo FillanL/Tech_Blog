@@ -60,14 +60,10 @@ export default class homeSlider extends Component {
     }
 
     render() {
-        // this.changePic()
-        
-        // console.log(this.state)
 
         return (
 
             <>
-            {/* onClick={()=>this.clickIn()} */}
                 <img  className="slider" src={photos[this.state.index]} alt="slidee" />
             </>
 

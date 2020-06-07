@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
     const articles = useSelector(state => state.content.articles)
     const mock = [0,1,2,3,]
-    // const grayColor = "rgb(205,203,204)"
+
     return (
         <footer>
             <div className="section_wrapper">
@@ -70,7 +70,6 @@ const Footer = () => {
                                 icon={['fab', 'facebook-f']} 
                                 size="lg"
                                 color="silver"
-                                // color={grayColor}
                             />
                         </a>
                     </li>
@@ -80,7 +79,6 @@ const Footer = () => {
                                 icon={['fab', 'instagram']}
                                 size="lg"
                                 color="silver"
-                                // color={grayColor}
                             />
                         </a>
                     </li>
@@ -89,7 +87,6 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={['fab', 'twitter']} 
                                 size="lg"
-                                // color={grayColor}
                                 color="silver"
                             />
                         </a>
@@ -100,8 +97,6 @@ const Footer = () => {
                             icon={['fab', 'medium']} 
                             size="lg"
                             color="silver"
-                            // color={grayColor}
-
                         />
                         </a>
                     </li>
@@ -110,7 +105,6 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={['fab', 'youtube']} 
                                 size="lg"
-                                // color={grayColor}
                                 color="silver"
                             />
                         </a>
