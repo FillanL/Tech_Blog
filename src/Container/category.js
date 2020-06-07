@@ -36,10 +36,16 @@ function category() {
                 </div>
                 <div className="ad-box">
 
-                </div>
-                <a href="https://www.siteground.com/web-hosting.htm?afbannercode=fe88a23517a2f9acda633a8b9b5a9f38">
-                    <img src="https://ua.siteground.com/img/banners/general/2019_EN/no_price/start_site_250x250_green.jpg" alt="Web Hosting" width="250" height="250" border="0"/>
-                </a>
+                </div >
+                <div className="ad-box">
+
+                </div >
+                {/* <a href="https://www.siteground.com/web-hosting.htm?afbannercode=fe88a23517a2f9acda633a8b9b5a9f38">
+                    <img src="https://ua.siteground.com/img/banners/general/2019_EN/no_price/start_site_250x250_green.jpg" 
+                    // alt="Web Hosting" width="250" 
+                    // height="250" 
+                    border="0"/>
+                </a> */}
                 
 
             </div>
