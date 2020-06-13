@@ -21,8 +21,7 @@ const RandomPost = (props) => {
                     <div className="rando" key={post._id}>
                         <img
                             srcSet={`http://localhost:3004/articles/images/${post.articleImgUrl}`}
-                            alt={`${post.articleTitle
-                                }`}
+                            alt={`${post.articleTitle}`}
                         />
                         <div className="random_section_container">
                             <h2>

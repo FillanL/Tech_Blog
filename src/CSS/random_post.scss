@@ -17,6 +17,7 @@
         grid-template-columns: 30% 69%;
         grid-column-gap: 1%;
         box-shadow: 0 3px 11px rgba(94, 96, 110, 0.363);
+        padding: 10px;
         p {
             font-size: 14px;
             font-weight: 400;
@@ -74,7 +75,6 @@
         }
     }
 }
-
 @media(max-width:700px) {
     .random_post {
         .rando {
